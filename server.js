@@ -3,7 +3,6 @@ const app = express();
 const PORT = 60180;
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/my_database', {useNewUrlParser: true, useUnifiedTopology: true});
-
 const Cat = mongoose.model('Cat', { name: String });
 
 const kitty = new Cat({ name: 'Zildjian' });
